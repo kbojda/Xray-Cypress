@@ -40,5 +40,5 @@ jobs:
            xrayCloud: "true"
            testFormat: "junit"
            testPaths: "**/results/*.xml"
-           testPlanKey: "${{ XRAY-1400 }}"
+           testPlanKey: "${{ inputs.projectKey  }}"
            projectKey: "${{ XRAY }}"
