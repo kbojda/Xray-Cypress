@@ -28,12 +28,7 @@ jobs:
         run: |
           npm install cypress
           npm install mocha-junit-reporter
-          
       - name: Run tests
-          env:
-            BASE_URL: ${{ secrets.BASE_URL }}
-            AUTH_USERNAME: ${{ secrets.AUTH_USERNAME }}
-            AUTH_PASSWORD: ${{ secrets.AUTH_PASSWORD }}
         run: npm test
       - name: debug JUnit XML report
         run: cat results/todo-results.xml
