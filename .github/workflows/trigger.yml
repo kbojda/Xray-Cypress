@@ -54,6 +54,6 @@ jobs:
            xrayBaseUrl: "${{ https://truffaut-dosi.atlassian.net }}"
            testFormat: "junit"
            testPaths: "**/results/*.xml"
-           testPlanKey: "${{ XRAY-1400 }}"
-           projectKey: "${{ XRAY }}"
+           testPlanKey: "${{ inputs.testPlanKey }}"
+           projectKey: "${{ inputs.projectKey }}"
            testEnvironments: "NODE_${{ matrix.node-version }}"
